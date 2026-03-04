@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ACN Demo Visualizer</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <span class="pill">ACN</span>
+      <div>
+        <div class="title">Agent Collaboration Network</div>
+        <div class="subtitle">ASP Protocol Demo (visual)</div>
+      </div>
+    </div>
+    <button id="runBtn">Run Demo</button>
+  </header>
+
+  <main>
+    <section class="panel">
+      <div class="panel-header">
+        <h2>Live Protocol Log</h2>
+        <div id="status" class="status idle">Idle</div>
+      </div>
+      <div id="log" class="log"></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h2>On-Chain Blocks</h2>
+        <button id="refreshChain" class="ghost">Refresh</button>
+      </div>
+      <div id="chain" class="chain-table"></div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Web viewer runs the same python demo under the hood.</span>
+    <code>python3 Demo/web_server.py</code>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

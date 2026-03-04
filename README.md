@@ -104,6 +104,11 @@ We are looking for:
 - Developers who want to think through implementation paths
 - Anyone who believes the window to define this alternative is closing
 
+### ACN Demo (CLI & Web)
+
+- **Terminal**: `python3 Demo/run_demo.py` (or `--verify` to only check the chain)
+- **Web visualizer**: `python3 Demo/web_server.py` then open http://localhost:8000 to watch the protocol steps live and inspect the on-chain blocks.
+
 ---
 
 ## Read the Full White Paper
